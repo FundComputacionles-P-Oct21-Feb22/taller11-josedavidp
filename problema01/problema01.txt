@@ -1,0 +1,47 @@
+1. Inicio 
+2. funcionPrincipal() 
+3. 	cliente, x(30)[{A-Z}, {a-z}, {BS}]
+4. 	cedula, x(30)[{A-Z}, {a-z}, {BS}]
+5. 	opcion, i[0-n] 
+6. 	Escribir "Ingresar el nombre del cliente: "
+7. 	Leer cliente
+8. 	Escribir "Ingresar el número de cédula del cliente: "
+9. 	Leer cedula 
+10. 	Escribir "Ingresar [1]Para calcular el valor de la Planilla de Luz, [2] Para calcular el valor del inmueble"
+11. 	Leer opcion
+12. 	Si (opcion == 1) entonces
+13. 		obtener funcionLuz(cliente; cedula)
+14.	caso contrario
+15.			Si(opcion == 2) entonces
+16. 			obtener funcionPredio(cliente; cedula)
+17.		caso contrario
+18. 			Escribir "Los datos ingresados no son permitidos"
+19.			Fin si 
+20. 	Fin si 
+21. Fin funcionPrincipal
+
+22. 	funcionLuz(a, x; b, x)
+23.  	kilovatio, d[0-n]
+24.    	kilovatioMes, d[0-n]
+25.		valor, d[0-n]
+26. 	mensajeFinal, x(100)[{A-Z}, {a-z}, {0-n}, {BS}]
+27. 	Escribir "Ingresar el valor del Kilovatio: "
+28. 	Leer kilovatio
+29. 	Escribir "Ingresar la cantidad de Kilovatios consumidos en el mes: "
+30. 	Leer kilovatioMes
+31. 	valor <-- kilovatio * kilovatioMes
+32. 	mensajeFinal <-- "Cliente "+ a + "con cédula " + b +" debe cancelar el valr de $" + valor
+33. Fin funcionLuz
+ 
+34. funcionPredio(a, x; b, x)
+35. 	inmueble, d[0-n]
+36. 	porcentajeInmueble, d[0-n] <-- 0.02
+37. 	mensajeFinal, x(100)[{A-Z}, {a-z}, {0-n}, {BS}]
+38. 	valorTotal, d[0-n]
+39.	Escribir "Ingresar el valor del Inmueble: "
+40. 	Leer inmueble
+41. 	valorTotal = inmueble * porcentajeInmueble
+42. 	mensajeFinal <-- "Cliente "+ a + "con cédula " + b +" debe cancelar el valor de $" + valorTotal
+43. 	Escribir mensajeFinal
+44. 	Fin funcionPredio
+45. Fin 

@@ -1,0 +1,21 @@
+1. Inicio
+2. funcionPrincipal()
+3. obtener funcionArreglo()
+4. fin funcion principal
+  
+5. funcionArreglo()
+6. 	datos, x(20)[{A-Z}, {a-z}, {0-n}, {BS}]
+7. 	cadena(5), x(150)[{A-Z}, {a-z}, {0-n}, {BS}]
+
+8. 	Para (int i = 0; i < 5; i++) haga
+9. 		Escribir "Ingresar un valor"
+10. 		Leer datos
+11. 		cadena [i] <-- datos
+12. 	Fin Para
+
+13. Para (int i = 0; i < 5; i++) haga
+14. 		Escribir cadena[i]
+15. Fin Para
+16. fin funcionArreglo
+	
+17. Fin
